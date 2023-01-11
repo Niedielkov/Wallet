@@ -1,0 +1,28 @@
+﻿@{
+    List<Object> menuItems = new List<Object>();
+
+    menuItems.Add(new
+    {
+        text = "Dashboard",
+        url = "/",
+        iconCss = "fa-solid fa-box"
+    });
+    menuItems.Add(new
+    {
+        text = "Categories",
+        url = "/Category",
+        iconCss = "fa-solid fa-folder-closed"
+    });
+    menuItems.Add(new
+    {
+        text = "Transactions",
+        url = "/Transaction",
+        iconCss = "fa-solid fa-arrow-right-arrow-left"
+    });
+}
+
+<ejs-sidebar id="sidebar" width="290px" enableDock>
+    <e-content-template>
+        <ejs-menu id="menu" items="menuItems" orientation="Vertical"></ejs-menu>
+    </e-content-template>
+</ejs-sidebar>
